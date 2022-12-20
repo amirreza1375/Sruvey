@@ -17,8 +17,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    private val servers = ArrayList<String>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Add servers
+        servers.add("https://redbull.humanresources.cl")
+        servers.add("https://parquearauco-aeco.bequarks.cl")
+        servers.add("https://promart-analytic.bequarks.pe")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
