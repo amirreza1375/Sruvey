@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/racingsansoneregular"
+        android:layout_marginTop="8dp"
+        tools:text="Loca 123455"
+        android:id="@+id/pageTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/pageViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

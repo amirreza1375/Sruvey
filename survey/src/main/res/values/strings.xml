@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="commmentHint">Type here</string>
+    <string name="rangeError">Value must be within the given range</string>
+    <string name="valueIsNotAcceptable">Value is not acceptable</string>
+</resources>

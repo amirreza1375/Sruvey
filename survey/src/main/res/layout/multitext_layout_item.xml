@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_back"
+    android:layout_margin="6dp"
+    android:padding="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"
+        android:id="@+id/commentFieldContainer"
+        android:hint="@string/commmentHint"
+        app:hintTextAppearance="@color/generalHintColorLight"
+        app:hintTextColor="@color/generalHintColor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:fontFamily="@font/q"
+            android:minHeight="40dp"
+            android:background="@null"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:id="@+id/commentField"
+            android:labelFor="@id/commentField"
+            android:textColor="@color/generalHeadLineTextColor"
+            android:textColorHint="@color/generalHintColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/generalErrorColor"
+        android:fontFamily="@font/racingsansoneregular"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        tools:text="MIN = 100 MAX = 10000"
+        android:id="@+id/rangeTxt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

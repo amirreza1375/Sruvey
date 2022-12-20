@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //General
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryLight">#42B9EF</color>
+    <color name="colorPrimaryDark">#0391D1</color>
+
+    <color name="colorPrimaryP">#12AEF4</color>
+    <color name="colorPrimaryLightP">#50BDEF</color>
+    <color name="colorPrimaryDarkP">#1A99D3</color>
+
+    <color name="accent">#e79319</color>
+    <color name="accentDark">#E68B08</color>
+    <color name="accentLight">#E49C33</color>
+
+    <color name="accentP">#E89A29</color>
+    <color name="accentDarkP">#E4911A</color>
+    <color name="accentLightP">#E6A444</color>
+
+    <color name="goodButtonStart">#2196F3</color>
+    <color name="goodButtonCenter">#35A0F6</color>
+    <color name="goodButtonEnd">#0C8DF3</color>
+
+    <color name="goodButtonStartPressed">#2B9AF3</color>
+    <color name="goodButtonCenterPressed">#45A7F6</color>
+    <color name="goodButtonEndPressed">#1E94F1</color>
+
+    <color name="generalHeadLineTextColor">#000000</color>
+    <color name="generalTextColor">#1B1B1B</color>
+    <color name="generalTextColorOpisite">#FFFFFF</color>
+    <color name="generalHintColor">#919191</color>
+    <color name="generalHintColorLight">#E1E1E1</color>
+    <color name="generalBackGround">#fff</color>
+    <color name="generalAlertBackGround">#fff</color>
+    <color name="generalAlertBorder">#00FFFFFF</color>
+    <color name="generalLinkColor">#2196F3</color>
+    <color name="generalErrorColor">#E91E63</color>
+    <color name="generalFineColor">#4CAF50</color>
+    <color name="generalTrasparent">#00FFFFFF</color>
+    <color name="generalGrayHint">#F3F3F3</color>
+    <color name="generalSeparator">#EAEAEA</color>
+
+
+    // -----------------------------------------------------------------~~~~~~~~~~~~~~~~~~~~~~~
+
+    //Splash
+
+    <color name="splashHeadLineTextColor">#fff</color>
+
+    // -----------------------------------------------------------------~~~~~~~~~~~~~~~~~~~~~~~
+
+    //Drawer
+
+    <color name="counter_back">#BABABA</color>
+
+
+</resources>

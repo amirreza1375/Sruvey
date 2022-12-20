@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //General
+
+    <color name="colorPrimary">#181818</color>
+    <color name="colorPrimaryLight">#323232</color>
+    <color name="colorPrimaryDark">#000</color>
+
+    <color name="accent">#e79319</color>
+    <color name="accentDark">#E68B08</color>
+    <color name="accentLight">#E49C33</color>
+
+    <color name="accentP">#E89A29</color>
+    <color name="accentDarkP">#E4911A</color>
+    <color name="accentLightP">#E6A444</color>
+
+    <color name="generalHeadLineTextColor">#fff</color>
+    <color name="generalTextColor">#F1F1F1</color>
+    <color name="generalHintColor">#919191</color>
+    <color name="generalBackGround">#0B0B0B</color>
+    <color name="generalAlertBackGround">#1F1F1F</color>
+    <color name="generalAlertBorder">#6E6E6E</color>
+
+    //---------------------------------------------------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    //Splash
+
+    <color name="splashHeadLineTextColor">#000</color>
+
+    //---------------------------------------------------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    //Login
+
+
+    //---------------------------------------------------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+    //Drawer
+
+    <color name="counter_back">#BABABA</color>
+
+
+</resources>

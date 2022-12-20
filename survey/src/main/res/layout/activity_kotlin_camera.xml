@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camera.KotlinCameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/previewImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/takePhotoBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/focusImageView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/focus" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/cameraOptionsContainer"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/closeBtn"
+            android:background="@drawable/camera_options_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="8dp"
+                android:src="@drawable/close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acceptBtn"
+            android:background="@drawable/camera_options_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="4dp"
+                android:src="@drawable/check_mark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+   android:paddingStart="12dp"
+    android:gravity="center_vertical|start"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/takePhotoBtn"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/galleryImageView"
+        android:src="@drawable/gallery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <ImageView
+        android:id="@+id/pdfImageView"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/add_pdf"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+</RelativeLayout>

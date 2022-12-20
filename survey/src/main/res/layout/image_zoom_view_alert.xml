@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/title_holder"
+        android:layout_weight="0.1"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/slider_counter_back"
+            android:padding="4dp"
+            android:rotation="45"
+            android:src="@drawable/ic_baseline_add_24"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginEnd="32dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:id="@+id/name"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            tools:text="aswhreaherahae"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <cl.aarampour.survey.views.sliderview.imageview.GestureImageView
+        android:id="@+id/gesture_image"
+        android:layout_below="@+id/title_holder"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/priority"
+        />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/priority"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        tools:text="aswhreaherahae"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        />
+
+
+</RelativeLayout>

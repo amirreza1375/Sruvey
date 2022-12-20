@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/takeImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <TextView
+                android:layout_centerInParent="true"
+                tools:text="PDF_file.pdf"
+                android:id="@+id/pdfNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+
+            <ImageView
+                android:id="@+id/emptyImageView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:padding="16dp"
+                android:src="@drawable/picture" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/goodButtonEndPressed"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/catNameTxt"
+                android:fontFamily="@font/q"
+                android:textColor="#fff"
+                android:text="Item 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
