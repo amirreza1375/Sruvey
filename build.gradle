@@ -6,3 +6,8 @@ plugins {
     id 'maven-publish'
 }
 
+group "amirreza1375"
+version "1.0-SNAPHOT"
+
+
+
