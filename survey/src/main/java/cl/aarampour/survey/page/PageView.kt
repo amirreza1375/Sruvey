@@ -52,7 +52,7 @@ class PageView(context: Context) : LinearLayout(context), IConditionalValueListe
     constructor(
         context: Context,
         pageJson: JSONObject,
-        position: Int,isPreview : Boolean,
+        position: Int, isPreview: Boolean,
         callBack: IPageViewListener
     ) : this(context) {
         this.callBack = callBack
@@ -72,23 +72,23 @@ class PageView(context: Context) : LinearLayout(context), IConditionalValueListe
     private fun addQuestions() {
 
 
-            val questions = getQuestions()
+        val questions = getQuestions()
 
-                for (baseView in questions) {
+        for (baseView in questions) {
 
-                    pageViewContainer.addView(baseView)
+            pageViewContainer.addView(baseView)
 
-                }
+        }
 
-                triggerConditionalAnswers()
+        triggerConditionalAnswers()
 
 
-                callBack.onPageLoadFinished()
+        callBack.onPageLoadFinished()
 
 
     }
 
-    private  fun getQuestions(): ArrayList<BaseView> {
+    private fun getQuestions(): ArrayList<BaseView> {
 
         val questions = ArrayList<BaseView>()
 
@@ -156,7 +156,7 @@ class PageView(context: Context) : LinearLayout(context), IConditionalValueListe
 
         addView(view)
         view.findViewById<TextView>(R.id.pageTitleTxt)
-            .setText(pageJson.getString(SurveyKey.Page.TITLE))
+            .setText(if (pageJson.has(SurveyKey.Page.TITLE)) pageJson.getString(SurveyKey.Page.TITLE) else "")
 
         this.pageViewContainer = view.findViewById(R.id.pageViewContainer)
         this.scrollView = view.findViewById(R.id.scrollView)
@@ -200,10 +200,10 @@ class PageView(context: Context) : LinearLayout(context), IConditionalValueListe
         for (view in views) {
 
             if (!view.isMandatoryAnswered()) {
-                    scrollView.requestChildFocus(
-                        view,
-                        view
-                    )//Bring up not answered question to user in long surveys
+                scrollView.requestChildFocus(
+                    view,
+                    view
+                )//Bring up not answered question to user in long surveys
 
                 return false
 

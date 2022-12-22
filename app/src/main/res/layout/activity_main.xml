@@ -1,25 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <Spinner
+            android:id="@+id/shopSpinner"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="2dp"
+            android:onClick="onUpdateClicked"
+            android:id="@+id/updateBtn"
+            android:text="Update"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/checklistSpinner"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_above="@+id/buttonsContainer"
+        android:layout_below="@id/settingsContainer"
+        android:orientation="vertical"
+        android:id="@+id/surveyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="onBackClicked"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Back"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="onNextClicked"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Open"
+        android:id="@+id/openSurvey"
+        android:onClick="onOpenChecklistClicked"
+        android:layout_below="@id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/settingsContainer"
+        android:layout_below="@id/openSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <CheckBox
+            android:id="@+id/isPreviewCheck"
+            android:text="isPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Sruvey.AppBarOverlay">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:foregroundTint="#fff"
+        android:foregroundTintMode="src_over"
+        android:src="@drawable/ic_baseline_wifi_protected_setup_24"
+        android:tint="#fff"
+        android:tintMode="src_in" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Sruvey.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
 
 
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

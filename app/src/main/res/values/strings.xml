@@ -1,5 +1,98 @@
 <resources>
     <string name="app_name">Sruvey</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- Strings used for fragments for navigation -->
+    <string name="url">http://redbull.humanresources.cl</string>
+
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_pass_txt">Forger password ?</string>
+    <string name="singIn">Login</string>
+    <string name="empty">Empty</string>
+    <string name="invalidEmail">Invalid</string>
+    <string name="noInternet">Please check your connection</string>
+    <string name="changePassword">Change</string>
+    <string name="send">Send</string>
+    <string name="forgetPassGuide">You will get an email from us to submit new password for your account soon</string>
+    <string name="emailNotExist">Email not exist</string>
+    <string name="emailSendMessage">Reset password link sent , Please check you emails</string>
+    <string name="ok">Ok</string>
+
+    <string name="checklist">Checklist</string>
+    <string name="update">Update</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="deleted">Deleteds</string>
+    <string name="about">About</string>
+    <string name="shops">Shops</string>
+    <string name="calendarDate">Date</string>
+    <string name="fab_button_auditoria">Audit</string>
+    <string name="fab_button_ticket">Ticket</string>
+    <string name="fab_button_company">Company</string>
+    <string name="last24Hours">Last 24 hours</string>
+    <string name="download">Download</string>
+    <string name="downloading">Downloading</string>
+    <string name="install">Install</string>
+    <string name="passwordChageMsg">Password changed succesfully</string>
+    <string name="passwordNoMatch">Password not match</string>
+    <string name="confirm">Confirm</string>
+    <string name="appIsUpdated">App is up to date</string>
+
+    <string name="generalExpTitle">About App</string>
+    <string name="cameraPermissionExpTitle">Camera Permission</string>
+    <string name="storagePermissionExpTitle">Storage Permission</string>
+    <string name="locationPermissionExpTitle">Location Permission</string>
+    <string name="aboutAppExp">You will be able to choose from shops around you and select surveys related to that and answer all question then send . \nTo do these steps app need some permissions in next steps. \nYou can use it without internet if you let it download information at first.</string>
+    <string name="cameraPermissionExp">Camera permission will be used to take photos inside survey.</string>
+    <string name="storagePermissionExp">To manage you answers and data app need to storage permission. \nIf you have android 11 or above app "won't" ask for permission.</string>
+    <string name="locationPermissionExp">Last step. \nTo show you shops around app requires location permission. \nHave a good day :)</string>
+    <string name="finishedWelcome">Get Start</string>
+    <string name="permissionSettingsTitle">Please press open and follow instructions</string>
+    <string name="permissionSettingsExp">Under \"\'Permissions\'\" section \nPress on App permissions \nThen under \"\'NOT ALLOWED\'\" section press on any permission and and allow it.</string>
+    <string name="open">Open</string>
+    <string name="permissionErrorMessage">Please check again to allow all permissions</string>
+    <string name="questions">Questions</string>
+    <string name="finish">Finish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ccuidSearchHint">Por favor ingrese el ID CCU del Cliente</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+
+    <string name="resend">Reenviar</string>
+    <string name="cancel">Volver</string>
+    <string name="uploading">Uploading</string>
+    <string name="sent">Sent</string>
+    <string name="draft">Draft</string>
+    <string name="waiting">Waiting</string>
+    <string name="saveResultMessage">Do you want to save draft ?!</string>
+    <string name="close">Close</string>
+    <string name="yes">Yes</string>
+    <string name="checklistErrorTitle">Error</string>
+    <string name="emptyCcuId">No CCU ID found</string>
+    <string name="remove_row_msg">Do you want to remove this result ?!</string>
+    <string name="delete">Delete</string>
+    <string name="filter">Filter</string>
+    <string name="today">Today</string>
+    <string name="installing">Instalando</string>
+    <string name="newApp">New version</string>
+    <string name="newVersionMsg">Please try to install new version for better experience</string>
+    <string name="letsGo">Let\'s try</string>
+    <string name="draftChannelDesc">Result saved as draft</string>
+    <string name="notifTitle">Result has been saved as draft</string>
+    <string name="notifText">Open app and continue answering where you left</string>
+    <string name="language">Language</string>
+    <string name="about_text">Aplicación Creada para el levantamiento en terreno de stock y orden de productos.</string>
+    <string name="noCcuId">No ccu id</string>
+    <string name="changeYourPassword">Change your password</string>
+    <string name="allRightsReserved">Inc. All rights reserved.</string>
+    <string name="copyRightRest">Copyright © 2021 </string>
+    <string name="currentVersion">Current version</string>
+    <string name="availableVersion">Available Version</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="pressAgainToExisApp">Please press back again to exis app</string>
 
 </resources>

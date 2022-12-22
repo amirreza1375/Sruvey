@@ -142,7 +142,6 @@ class RadioGroupView(
 
                 val choiceJson = safeChoices.getJSONObject(i)
 
-
                 val radioButton = RadioButton(context)
                 radioButton.setText(choiceJson.getString(SurveyKey.Page.View.RadioGroup.TEXT))
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

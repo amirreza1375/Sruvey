@@ -56,4 +56,5 @@ dependencies {
 
     implementation "androidx.camera:camera-view:1.3.0-alpha01"
 
+
 }

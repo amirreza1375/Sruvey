@@ -300,11 +300,11 @@ public class ActivityCamera extends AppCompatActivity implements View.OnClickLis
          * Camera configuration
          */
 
-        if (!SurveyConfig.IS_GALLERY_ALLOWED){
+        if (!SurveyConfig.Companion.isGalleryAllowed()){
             galleryPickImg.setVisibility(View.GONE);
         }
 
-        if (!SurveyConfig.IS_PDF_ALLOWED){
+        if (!SurveyConfig.Companion.isPDFAllowed()){
             pdfPickImg.setVisibility(View.GONE);
         }
 
@@ -1347,13 +1347,13 @@ public class ActivityCamera extends AppCompatActivity implements View.OnClickLis
         camera_rotate.bringToFront();
 //        edit.setVisibility(View.INVISIBLE);
 
-        if (!SurveyConfig.IS_GALLERY_ALLOWED){
+        if (!SurveyConfig.Companion.isGalleryAllowed()){
             galleryPickImg.setVisibility(View.GONE);
         }else{
             galleryPickImg.setVisibility(View.VISIBLE);
         }
 
-        if (!SurveyConfig.IS_PDF_ALLOWED){
+        if (!SurveyConfig.Companion.isPDFAllowed()){
             pdfPickImg.setVisibility(View.GONE);
         }else{
             galleryPickImg.setVisibility(View.VISIBLE);
